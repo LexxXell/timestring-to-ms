@@ -30,8 +30,13 @@ export function timeStringToMs(time: string): number {
   return (parsedHours * 3600 + parsedMinutes * 60 + parsedSeconds) * 1000;
 }
 
+/* USAGE EXAMPLE */
 if (require.main === module) {
   console.log(timeStringToMs('10m 3 s')); // Example usage of the function
-  console.log(timeStringToMs('10m 3m')); // Example usage of the function
   console.log(timeStringToMs('1000')); // Example usage of the function
+  try {
+    console.log(timeStringToMs('10m 3m')); // Example usage of the function | ERROR
+  } catch (e) {
+    console.log(`ERROR: ${(e as Error).message}`);
+  }
 }
