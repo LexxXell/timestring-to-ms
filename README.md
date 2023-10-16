@@ -22,6 +22,7 @@ console.log(timeStringToMs('1h30m')); // Output: 5400000
 ### `timeStringToMs(time: string): number`
 
 Converts a string representing time in the format '1h1m1s' to milliseconds.
+If the input string consists only of digits, it is considered as milliseconds.
 
 - `time` - A string representing time in the format '1h1m1s'.
 
