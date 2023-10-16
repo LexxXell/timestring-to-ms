@@ -1,0 +1,16 @@
+{
+  "name": "timestring-to-ms",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "author": "LexxXell",
+  "license": "MIT",
+  "scripts": {
+    "compile": "yarn tsc && yarn tsc --declaration",
+    "dev": "yarn compile && node lib/index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.6",
+    "typescript": "^5.2.2"
+  }
+}
