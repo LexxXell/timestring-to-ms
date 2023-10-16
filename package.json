@@ -1,5 +1,5 @@
 {
-  "name": "timestring-to-ms",
+  "name": "@lexxxell/timestring-to-ms",
   "version": "1.0.0",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
